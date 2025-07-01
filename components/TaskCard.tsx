@@ -14,6 +14,7 @@ export default function TaskCard({ task, onToggleStatus, onInspect }: TaskCardPr
     <TouchableOpacity
       style={[styles.card, task.status === 'completed' && styles.completedCard]}
       onPress={onToggleStatus}
+      testID={`task-id-${task.id}`}
     >
       <Text style={styles.title}>{task.title}</Text>
       <Text style={styles.date}>Vence: {new Date(task.dueDate).toLocaleDateString()}</Text>
