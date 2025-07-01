@@ -16,27 +16,20 @@ Após instalar as dependências inicie o projeto com:
 
 `yarn start`
 
-## Funcionalidades Principais
+Para rodar os testes unitários rode:
 
-- [Funcionalidade 1: Listagem de tarefas]
+`yarn test:unit`
 
-O Aplicativo retorna uma listagem de tarefas agendas, com datas de vencimente e breve descrição
+Para rodar os testes E2E rode:
 
-![image](https://github.com/user-attachments/assets/97052e64-78d8-4b53-801f-209f22769661)
+`yarn test:e2e`
 
+## Diferença entre testes unitários e testes E2E (End to End)
 
-- [Funcionalidade 2: Inspeção de tarefas]
+- [Testes Unitários]
 
-Traz detalhes sobre a tarefa, com isto você consegue ter mais informações sobre cada atividade e entrega
+Testam a menor parte possível do código de forma isolada, como uma única função ou um componente. O objetivo é garantir que essa pequena peça funcione corretamente por si só, sem depender do resto do aplicativo. Eles são rápidos e ajudam a encontrar erros na lógica interna do código.
 
-![image](https://github.com/user-attachments/assets/1c279a2c-fdbc-47bc-9260-27aacd615df7)
+- [Testes End to End]
 
-
-- [Funcionalidade 3: Gerenciamento de Perfil]
-
-Permite ter o controle total de atividades
-
-![image](https://github.com/user-attachments/assets/830452a1-6b48-4e57-94c4-4384ac055974)
-
-
-O app foi construído utilizando React Native e segue boas práticas de desenvolvimento mobile.
+Testam um fluxo completo do usuário na aplicação, do início ao fim. Eles simulam a jornada real do usuário, como fazer login, navegar por várias telas e completar uma ação. O objetivo é garantir que todas as partes do sistema (interface, banco de dados, rede) funcionem bem juntas.
