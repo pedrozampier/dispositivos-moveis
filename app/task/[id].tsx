@@ -45,7 +45,7 @@ export default function ViewTaskScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+        <TouchableOpacity onPress={() => router.back()} style={styles.backButton} testID='Voltar'>
           <ArrowLeft size={24} color={Colors.gray[800]} />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Detalhes da Atividade</Text>
